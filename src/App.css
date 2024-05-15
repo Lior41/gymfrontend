@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Styles for the primary navbar */
+.primary-navbar {
+  background-color: #f0f0f0;  /* Light grey background for the navbar */
+  padding: 10px 20px;         /* Padding around the navbar */
+  display: flex;              /* Display links in a row */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.left-links, .right-links, .center-links {
+  display: flex;
+  gap: 20px; /* Adjust spacing between links */
+}
+
+.primary-navbar a {
+  text-decoration: none;      /* Remove underline from all links */
+  color: #333;                /* Dark grey color for text */
+  padding: 5px 10px;          /* Padding around the link text */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.primary-navbar a:hover {
+  background-color: #ddd;     /* Lighter grey background on hover */
+  border-radius: 5px;
+}
+
+.primary-navbar .active {
+  font-weight: bold;          /* Bold font for active link */
+  background-color: #bbb;     /* Different background color for active link */
+  border-radius: 5px;         /* Rounded corners for active link */
+}
+
+
+.componenet{
+  padding: 10px 30px;
+}
+
+
+.goalsCardsContainer{
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr); /* Sets minimum width of 300px and max as available space */
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.goalCard{
+  box-sizing: border-box; /* Ensures padding and borer are included within the element's width/height */
+  display: grid;
+  grid-template-columns: 2fr 1fr auto auto; /* Allocate space for title, type, and checkbox */
+  gap: 10px; /* Space between grid items */
+  align-items: center; /* Align items vertically in the middle */
+  border: 1px solid #ccc;
+  width: 80%;
+  min-height: 50px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  
+}
+
+
+.goalCard-isCompleted-true{
+  
+}
+.goalCard-isCompleted-false{
+  /* border-color: #4c5fc5; */
+}
+
+
+.screenTitle{
+  text-align: center;
+}
+
+
+.addGoalButton {
+
+}
+.addGoalButton:hover {
+
+}
+
+.isSelectedCheckbox{
+  
+}
+
+
+
+.nutritionPlansContianer{
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.workoutsPlansContianer{
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto auto 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.exeRow{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3fr 1fr 1fr;
+  text-align: start;
+}
